@@ -1,0 +1,36 @@
+[user]
+	name = Chaeyong Chong
+	email = cychong@gmail.com
+
+[alias]
+	  co = checkout
+	  ci = commit
+	  st = status
+	  br = branch
+	  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	  type = cat-file -t
+	  dump = cat-file -p
+
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+
+[difftool]
+	prompt = false	# git config --global difftool.prompt false
+	
+
+[sendemail]
+	from = Chaeyong Chong <cychong@gmail.com>
+	smtpserver = smtp.gmail.com
+	smtpuser = cychong@gmail.com
+	smtpencryption = tls
+	smtppass = "FIXME"		## FIXME
+	chainreplyto = false
+	smtpserverport = 587
