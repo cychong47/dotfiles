@@ -1,12 +1,16 @@
 set nu
+syntax on
 
 "set smartindent   " Do smart autoindenting when starting a new line
 "set shiftwidth=4  " Set number of spaces per auto indentation
 "set expandtab     " When using <Tab>, put spaces instead of a <tab> charact
-syntax on
+
+" highlight search
+set hlsearch
+" incremental search
+set incsearch
 
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
-
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
