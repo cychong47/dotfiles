@@ -20,6 +20,13 @@ return require('packer').startup(function(use)
 
   use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' } 
   
+  use { 'lukas-reineke/indent-blankline.nvim' }
+
+  use {
+      'nvim-treesitter/nvim-treesitter',
+      run = ':TSUpdate'
+  }
+
   -- [[ Theme ]]
   use { 'mhinz/vim-startify' }                       -- start screen
   use { 'DanilaMihailov/beacon.nvim' }               -- cursor jump

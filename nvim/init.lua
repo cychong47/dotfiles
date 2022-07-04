@@ -16,6 +16,7 @@ require('plug')      -- Plugins
 -- PLUGINS: Add this section
 require('nvim-tree').setup{}
 
+-- LUALINE
 require('lualine').setup {
   options = {
     theme = 'dracula-nvim'
@@ -41,6 +42,12 @@ require('lualine').setup{
     extensions = {
         'fzf',
     }
+}
+
+require("indent_blankline").setup {
+    -- for example, context is off by default, use this to turn it on
+    show_current_context = true,
+    show_current_context_start = true,
 }
 
 -- REFERENCE
