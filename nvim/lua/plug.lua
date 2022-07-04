@@ -13,7 +13,7 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use { 'majutsushi/tagbar' }                        -- code structure
-  use { 'Yggdroot/indentLine' }                      -- see indentation
+--  use { 'Yggdroot/indentLine' }                      -- see indentation
   use { 'tpope/vim-fugitive' }                       -- git integration
   use { 'junegunn/gv.vim' }                          -- commit history
   use { 'windwp/nvim-autopairs' }
@@ -26,6 +26,15 @@ return require('packer').startup(function(use)
       'nvim-treesitter/nvim-treesitter',
       run = ':TSUpdate'
   }
+
+  -- Code completion
+  use { 'hrsh7th/cmp-nvim-lsp' }
+  use { 'hrsh7th/cmp-buffer' }
+  use { 'hrsh7th/cmp-path' }
+  use { 'hrsh7th/cmp-cmdline' }
+  use { 'hrsh7th/nvim-cmp' }
+  use { 'SirVer/ultisnips' }
+  use { 'quangnguyen30192/cmp-nvim-ultisnips' }
 
   -- [[ Theme ]]
   use { 'mhinz/vim-startify' }                       -- start screen

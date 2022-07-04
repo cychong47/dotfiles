@@ -6,6 +6,8 @@
 -- is called; otherwise, it will default to "\"
 vim.g.mapleader = ","
 vim.g.localleader = "\\"
+vim.opt.list = true
+vim.opt.listchars:append("eol:↴")
 
 -- IMPORTS
 require('vars')      -- Variables
@@ -48,7 +50,10 @@ require("indent_blankline").setup {
     -- for example, context is off by default, use this to turn it on
     show_current_context = true,
     show_current_context_start = true,
+    show_end_of_line = true,
 }
+
+--require("cmp")
 
 -- REFERENCE
 -- https://mattermost.com/blog/how-to-install-and-set-up-neovim-for-code-editing/
