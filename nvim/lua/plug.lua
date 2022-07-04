@@ -17,6 +17,8 @@ return require('packer').startup(function(use)
   use { 'tpope/vim-fugitive' }                       -- git integration
   use { 'junegunn/gv.vim' }                          -- commit history
   use { 'windwp/nvim-autopairs' }
+
+  use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' } 
   
   -- [[ Theme ]]
   use { 'mhinz/vim-startify' }                       -- start screen
