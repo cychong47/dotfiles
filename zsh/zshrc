@@ -1,0 +1,43 @@
+export PATH="/usr/local/opt/python@3.10/bin:$PATH"
+alias another='cd ~/Developer/another'
+alias blog='cd ~/Developer/Blog'
+alias gl30='python3 ~/Developer/goodlinks/goodlinks.py --days 30 --update --list'
+alias gl='python3 ~/Developer/goodlinks/goodlinks.py --days 7 --update --list'
+alias glv='python3 ~/Developer/goodlinks/goodlinks.py --days 7 --update --list -v'
+alias glvv='python3 ~/Developer/goodlinks/goodlinks.py --days 7 --update --list -vv'
+alias gl3='python3 ~/Developer/goodlinks/goodlinks.py --days 3 --update --list'
+alias glv3='python3 ~/Developer/goodlinks/goodlinks.py --days 3 --update --list -v'
+alias glvv3='python3 ~/Developer/goodlinks/goodlinks.py --days 3 --update --list -vv'
+alias glo='python3 ~/Developer/goodlinks/goodlinks.py --days 7 --update --obsidian -v'
+alias gt='ssh cychong@mini3 /home/cychong//shortcut/watch/get.sh > /dev/null'
+alias h1='helm --kubeconfig=/Users/cychong/.kube/config-mini1'
+alias h3='helm --kubeconfig=/Users/cychong/.kube/config-mini3'
+alias idn='cd /Users/cychong/Library/Mobile\ Documents/com~apple~CloudDocs/Downloads'
+alias k1='kubectl --kubeconfig=/Users/cychong/.kube/config-mini1'
+alias k3='kubectl --kubeconfig=/Users/cychong/.kube/config-mini3'
+alias m1='ssh cychong@mini1'
+alias m2='ssh cychong@mini2'
+alias m3='ssh cychong@mini3'
+alias md='cd /Users/cychong/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/'
+alias icd="cd /Users/cychong/Library/Mobile\ Documents/com~apple~CloudDocs"
+alias icdm="cd /Users/cychong/Library/Application\ Support/"
+alias mini1='m1'
+alias mini2='m2'
+alias mini3='m3'
+alias mkv2mp4='ffmpeg -i  -c copy '
+alias mp3='youtube-dl -x --audio-format mp3 '
+alias p3='ping mini3'
+alias send2m3='scp /Users/cychong/Downloads/*.torrent cychong@mini3:/mnt/media2/inbox/downloads'
+alias glf="ls -al $HOME/Library/Group\ Containers/group.com.ngocluu.goodlinks/Data/data.sqlite"
+alias vscode="/usr/local/bin/code"
+
+alias rm="rm -i"
+
+alias o1="ssh cychong@o1 -i ~/Documents/oracle-ssh-key-2021-12-27.key"
+
+alias kubectl="/usr/local/Cellar/kubernetes-cli/1.24.0/bin/kubectl"
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+alias vi="nvim"
