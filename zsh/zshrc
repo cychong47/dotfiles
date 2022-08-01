@@ -1,4 +1,4 @@
-export PATH="/usr/local/opt/python@3.10/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/opt/python@3.10/bin:$PATH"
 alias another='cd ~/Developer/another'
 alias blog='cd ~/Developer/Blog'
 alias gl30='python3 ~/Developer/goodlinks/goodlinks.py --days 30 --update --list'
