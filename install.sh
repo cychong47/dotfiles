@@ -22,3 +22,6 @@ sh vscode/install.sh
 
 # iterm2
 sh iterm2/install.sh
+
+# karabiner
+sh karabiner/install.sh
