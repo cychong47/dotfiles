@@ -11,6 +11,9 @@ open /Applications/Sequel\ Pro.app
 sudo xattr -dr com.apple.quarantine /Applications/DB\ Browser\ for\ SQLite.app
 open /Applications/DB\ Browser\ for\ SQLite.app
 
+# zshrc
+sh zsh/install.sh
+
 # fonts
 sh font/install.sh
 

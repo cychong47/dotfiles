@@ -1,12 +1,12 @@
-# font
-# https://github.com/powerline/fonts
-# copy -a xxx ~/Library/Fonts
-#
-# Install Visual Studio Code Extensions
+#!/bin/bash
+
+# allow to run
+sudo xattr -dr com.apple.quarantine /Applications/Visual\ Studio\ Code.app
+
+# copy settings file
+cp ./vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+
 # install vscode extensions
-# need to check
-code --install-extension AlanWalk.markdown-toc
-code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension GitHub.github-vscode-theme
 code --install-extension KevinRose.vsc-python-indent
