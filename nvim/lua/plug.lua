@@ -46,4 +46,7 @@ return require('packer').startup(function(use)
                 opt = true}
   }
   use { 'Mofiqul/dracula.nvim' }
+
+  -- [[ fzf ]]
+   use { 'junegunn/fzf'}
 end)
