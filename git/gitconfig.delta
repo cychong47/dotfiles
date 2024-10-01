@@ -23,6 +23,10 @@
 
 [delta]
 	features = decorations
+	plus-style = "syntax #012800"
+	minus-style = "syntax #340001"
+	syntax-theme = Monokai Extended
+	navigate = true
 
 [delta "interactive"]
 	keep-plus-minus-markers = false
